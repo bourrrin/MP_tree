@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#D8000000"
+    tools:context=".MediaPlayer">
+
+    <TextView
+        android:id="@+id/chanson_txt"
+        android:layout_width="214dp"
+        android:layout_height="40dp"
+        android:gravity="center"
+        android:text="Music"
+        android:textColor="#FFFFFF"
+        android:textSize="24sp"
+        app:flow_horizontalAlign="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.551" />
+
+    <ImageView
+        android:id="@+id/Alnum_cover_img"
+        android:layout_width="277dp"
+        android:layout_height="293dp"
+        android:src="@drawable/ic_launcher_background"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.091" />
+
+    <TextView
+        android:id="@+id/artiste_txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Band name"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.62" />
+
+    <SeekBar
+        android:id="@+id/player_sk"
+        android:layout_width="350dp"
+        android:layout_height="21dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.491"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.747" />
+
+    <LinearLayout
+        android:id="@+id/parent_btn"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.572"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.935">
+
+        <ImageView
+            android:id="@+id/previous_btn"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:rotation="-180"
+            android:src="@android:drawable/ic_media_next"
+            app:srcCompat="@android:drawable/ic_media_previous"
+            tools:layout_editor_absoluteX="63dp"
+            tools:layout_editor_absoluteY="590dp" />
+
+        <ImageView
+            android:id="@+id/player_btn"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:src="@android:drawable/ic_media_play" />
+
+        <ImageView
+            android:id="@+id/next_btn"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:src="@android:drawable/ic_media_next"
+            tools:layout_editor_absoluteX="263dp"
+            tools:layout_editor_absoluteY="590dp" />
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
